@@ -59,6 +59,23 @@ namespace DXGrid1
             return odtData;
         }
 
+        private void ogdData_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow oDatRes = ogdDataList.GetFocusedDataRow() as DataRow;
+                olaShoTxt.Text = oDatRes.Table.Rows[1]["tDataText"].ToString();
+                //olaShoTxt.Text = "5555";
 
+            }
+            catch (Exception oEx) {
+                MessageBox.Show(oEx.Message);
+            }
+            finally
+            {
+
+            }
+           
+        }
     }
 }
