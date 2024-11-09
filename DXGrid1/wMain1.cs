@@ -65,7 +65,7 @@ namespace DXGrid1
             {
                // int nRow = ogdDataList.RowCellClick;
                 DataRow oDatRes = ogdDataList.GetFocusedDataRow() as DataRow;
-                olaShoTxt.Text = oDatRes["tDataText"].ToString();
+                olaShoTxt.Text = oDatRes.Table.Rows[1]["tDataText"].ToString();
                 //olaShoTxt.Text = "5555";
 
             }

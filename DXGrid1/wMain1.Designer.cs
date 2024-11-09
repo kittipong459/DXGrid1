@@ -36,13 +36,11 @@
             this.otbColDateTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.otbColNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.otbColDecimal = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.oilPdt = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.olaShoTxt = new System.Windows.Forms.Label();
+            this.oilPdt = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogdDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ogdData
@@ -51,8 +49,7 @@
             this.ogdData.MainView = this.ogdDataList;
             this.ogdData.Name = "ogdData";
             this.ogdData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemCheckEdit1,
-            this.repositoryItemPictureEdit1});
+            this.repositoryItemCheckEdit1});
             this.ogdData.Size = new System.Drawing.Size(814, 444);
             this.ogdData.TabIndex = 0;
             this.ogdData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -73,6 +70,7 @@
             this.oilPdt});
             this.ogdDataList.GridControl = this.ogdData;
             this.ogdDataList.Name = "ogdDataList";
+            this.ogdDataList.OptionsPrint.EnableAppearanceEvenRow = true;
             this.ogdDataList.RowHeight = 45;
             // 
             // ockColCheckBox
@@ -80,7 +78,6 @@
             this.ockColCheckBox.Caption = "เลือก";
             this.ockColCheckBox.ColumnEdit = this.repositoryItemCheckEdit1;
             this.ockColCheckBox.Name = "ockColCheckBox";
-            this.ockColCheckBox.OptionsColumn.AllowEdit = false;
             this.ockColCheckBox.Visible = true;
             this.ockColCheckBox.VisibleIndex = 0;
             this.ockColCheckBox.Width = 41;
@@ -95,7 +92,6 @@
             this.otbColText.Caption = "ข้อมูล";
             this.otbColText.FieldName = "tDataText";
             this.otbColText.Name = "otbColText";
-            this.otbColText.OptionsColumn.AllowEdit = false;
             this.otbColText.Visible = true;
             this.otbColText.VisibleIndex = 1;
             this.otbColText.Width = 278;
@@ -105,7 +101,6 @@
             this.otbColDateTime.Caption = "วันเวลา";
             this.otbColDateTime.FieldName = "dDataDateTime";
             this.otbColDateTime.Name = "otbColDateTime";
-            this.otbColDateTime.OptionsColumn.AllowEdit = false;
             this.otbColDateTime.Visible = true;
             this.otbColDateTime.VisibleIndex = 2;
             this.otbColDateTime.Width = 133;
@@ -115,7 +110,6 @@
             this.otbColNumber.Caption = "ตัวเลข";
             this.otbColNumber.FieldName = "nDataNumber";
             this.otbColNumber.Name = "otbColNumber";
-            this.otbColNumber.OptionsColumn.AllowEdit = false;
             this.otbColNumber.Visible = true;
             this.otbColNumber.VisibleIndex = 3;
             this.otbColNumber.Width = 107;
@@ -125,23 +119,9 @@
             this.otbColDecimal.Caption = "ตัวเลขทศนิยม";
             this.otbColDecimal.FieldName = "cDataDecimal";
             this.otbColDecimal.Name = "otbColDecimal";
-            this.otbColDecimal.OptionsColumn.AllowEdit = false;
             this.otbColDecimal.Visible = true;
             this.otbColDecimal.VisibleIndex = 4;
             this.otbColDecimal.Width = 126;
-            // 
-            // oilPdt
-            // 
-            this.oilPdt.Caption = "รูป";
-            this.oilPdt.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.oilPdt.Name = "oilPdt";
-            this.oilPdt.OptionsColumn.AllowEdit = false;
-            this.oilPdt.Visible = true;
-            this.oilPdt.VisibleIndex = 5;
-            // 
-            // repositoryItemPictureEdit1
-            // 
-            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
             // 
             // olaShoTxt
             // 
@@ -152,6 +132,13 @@
             this.olaShoTxt.Size = new System.Drawing.Size(67, 25);
             this.olaShoTxt.TabIndex = 1;
             this.olaShoTxt.Text = "label1";
+            // 
+            // oilPdt
+            // 
+            this.oilPdt.Caption = "img";
+            this.oilPdt.Name = "oilPdt";
+            this.oilPdt.Visible = true;
+            this.oilPdt.VisibleIndex = 5;
             // 
             // wMain
             // 
@@ -165,7 +152,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogdDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,7 +169,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn otbColDecimal;
         private System.Windows.Forms.Label olaShoTxt;
         private DevExpress.XtraGrid.Columns.GridColumn oilPdt;
-        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
     }
 }
 
