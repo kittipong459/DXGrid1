@@ -97,5 +97,14 @@ namespace DXGrid1
            
         }
 
+        private void ocmLayout_Click(object sender, EventArgs e)
+        {
+            this.ogdData.MainView = this.layoutView1;
+        }
+
+        private void ocmBandedGrid_Click(object sender, EventArgs e)
+        {
+            this.ogdData.MainView = this.bandedGridView1;
+        }
     }
 }

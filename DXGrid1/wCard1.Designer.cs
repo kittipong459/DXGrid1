@@ -29,8 +29,30 @@
         private void InitializeComponent()
         {
             this.ogdData = new DevExpress.XtraGrid.GridControl();
+            this.bandedGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
+            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.bandedGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.bandedGridColumn2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn3 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn4 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn5 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn6 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
+            this.ockColCheckBox = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_ockColCheckBox = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.otbColText = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_otbColText = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.otbColDateTime = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_otbColDateTime = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.otbColNumber = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_otbColNumber = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.otbColDecimal = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_otbColDecimal = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.otbColPdt = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_otbColPdt = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.olaShoTxt = new System.Windows.Forms.Label();
             this.olaDate = new System.Windows.Forms.Label();
             this.olaQty = new System.Windows.Forms.Label();
@@ -40,66 +62,255 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.opbShowIMG = new System.Windows.Forms.PictureBox();
-            this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
-            this.ockColCheckBox = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.otbColText = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.otbColDateTime = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.otbColNumber = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.otbColDecimal = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.otbColPdt = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
-            this.layoutViewField_ockColCheckBox = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_otbColText = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_otbColDateTime = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_otbColNumber = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_otbColDecimal = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_otbColPdt = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.bandedGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.bandedGridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn3 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn4 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn5 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn6 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.ocmLayout = new System.Windows.Forms.Button();
+            this.ocmBandedGrid = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_ockColCheckBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColText)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColDateTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColDecimal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColPdt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // ogdData
             // 
-            this.ogdData.Location = new System.Drawing.Point(50, 186);
-            this.ogdData.MainView = this.layoutView1;
+            this.ogdData.Location = new System.Drawing.Point(50, 208);
+            this.ogdData.MainView = this.bandedGridView1;
             this.ogdData.Name = "ogdData";
             this.ogdData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
             this.repositoryItemPictureEdit1});
-            this.ogdData.Size = new System.Drawing.Size(834, 358);
+            this.ogdData.Size = new System.Drawing.Size(834, 336);
             this.ogdData.TabIndex = 0;
             this.ogdData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.layoutView1,
-            this.bandedGridView1});
+            this.bandedGridView1,
+            this.layoutView1});
             this.ogdData.Click += new System.EventHandler(this.ogdData_Click);
+            // 
+            // bandedGridView1
+            // 
+            this.bandedGridView1.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.gridBand1});
+            this.bandedGridView1.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
+            this.bandedGridColumn1,
+            this.bandedGridColumn2,
+            this.bandedGridColumn3,
+            this.bandedGridColumn4,
+            this.bandedGridColumn5,
+            this.bandedGridColumn6});
+            this.bandedGridView1.GridControl = this.ogdData;
+            this.bandedGridView1.Name = "bandedGridView1";
+            // 
+            // gridBand1
+            // 
+            this.gridBand1.Caption = "gridBand1";
+            this.gridBand1.Columns.Add(this.bandedGridColumn1);
+            this.gridBand1.Columns.Add(this.bandedGridColumn2);
+            this.gridBand1.Columns.Add(this.bandedGridColumn3);
+            this.gridBand1.Columns.Add(this.bandedGridColumn4);
+            this.gridBand1.Columns.Add(this.bandedGridColumn5);
+            this.gridBand1.Columns.Add(this.bandedGridColumn6);
+            this.gridBand1.Name = "gridBand1";
+            this.gridBand1.VisibleIndex = 0;
+            this.gridBand1.Width = 760;
+            // 
+            // bandedGridColumn1
+            // 
+            this.bandedGridColumn1.Caption = "เลือก";
+            this.bandedGridColumn1.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.bandedGridColumn1.Name = "bandedGridColumn1";
+            this.bandedGridColumn1.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn1.Visible = true;
+            this.bandedGridColumn1.Width = 41;
             // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             // 
+            // bandedGridColumn2
+            // 
+            this.bandedGridColumn2.Caption = "ข้อมูล";
+            this.bandedGridColumn2.FieldName = "tDataText";
+            this.bandedGridColumn2.Name = "bandedGridColumn2";
+            this.bandedGridColumn2.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn2.Visible = true;
+            this.bandedGridColumn2.Width = 278;
+            // 
+            // bandedGridColumn3
+            // 
+            this.bandedGridColumn3.Caption = "วันเวลา";
+            this.bandedGridColumn3.FieldName = "dDataDateTime";
+            this.bandedGridColumn3.Name = "bandedGridColumn3";
+            this.bandedGridColumn3.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn3.Visible = true;
+            this.bandedGridColumn3.Width = 133;
+            // 
+            // bandedGridColumn4
+            // 
+            this.bandedGridColumn4.Caption = "ตัวเลข";
+            this.bandedGridColumn4.FieldName = "nDataNumber";
+            this.bandedGridColumn4.Name = "bandedGridColumn4";
+            this.bandedGridColumn4.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn4.Visible = true;
+            this.bandedGridColumn4.Width = 107;
+            // 
+            // bandedGridColumn5
+            // 
+            this.bandedGridColumn5.Caption = "ตัวเลขทศนิยม";
+            this.bandedGridColumn5.FieldName = "cDataDecimal";
+            this.bandedGridColumn5.Name = "bandedGridColumn5";
+            this.bandedGridColumn5.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn5.Visible = true;
+            this.bandedGridColumn5.Width = 126;
+            // 
+            // bandedGridColumn6
+            // 
+            this.bandedGridColumn6.Caption = "รูป";
+            this.bandedGridColumn6.ColumnEdit = this.repositoryItemPictureEdit1;
+            this.bandedGridColumn6.FieldName = "oilColPdt";
+            this.bandedGridColumn6.Name = "bandedGridColumn6";
+            this.bandedGridColumn6.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn6.Visible = true;
+            // 
             // repositoryItemPictureEdit1
             // 
             this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
+            // 
+            // layoutView1
+            // 
+            this.layoutView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.LayoutViewColumn[] {
+            this.ockColCheckBox,
+            this.otbColText,
+            this.otbColDateTime,
+            this.otbColNumber,
+            this.otbColDecimal,
+            this.otbColPdt});
+            this.layoutView1.GridControl = this.ogdData;
+            this.layoutView1.Name = "layoutView1";
+            this.layoutView1.TemplateCard = this.layoutViewCard1;
+            // 
+            // ockColCheckBox
+            // 
+            this.ockColCheckBox.Caption = "เลือก";
+            this.ockColCheckBox.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.ockColCheckBox.LayoutViewField = this.layoutViewField_ockColCheckBox;
+            this.ockColCheckBox.Name = "ockColCheckBox";
+            this.ockColCheckBox.OptionsColumn.AllowEdit = false;
+            this.ockColCheckBox.Width = 41;
+            // 
+            // layoutViewField_ockColCheckBox
+            // 
+            this.layoutViewField_ockColCheckBox.EditorPreferredWidth = 126;
+            this.layoutViewField_ockColCheckBox.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_ockColCheckBox.Name = "layoutViewField_ockColCheckBox";
+            this.layoutViewField_ockColCheckBox.Size = new System.Drawing.Size(211, 24);
+            this.layoutViewField_ockColCheckBox.TextSize = new System.Drawing.Size(69, 13);
+            // 
+            // otbColText
+            // 
+            this.otbColText.Caption = "ข้อมูล";
+            this.otbColText.FieldName = "tDataText";
+            this.otbColText.LayoutViewField = this.layoutViewField_otbColText;
+            this.otbColText.Name = "otbColText";
+            this.otbColText.OptionsColumn.AllowEdit = false;
+            this.otbColText.Width = 278;
+            // 
+            // layoutViewField_otbColText
+            // 
+            this.layoutViewField_otbColText.EditorPreferredWidth = 126;
+            this.layoutViewField_otbColText.Location = new System.Drawing.Point(0, 24);
+            this.layoutViewField_otbColText.Name = "layoutViewField_otbColText";
+            this.layoutViewField_otbColText.Size = new System.Drawing.Size(211, 24);
+            this.layoutViewField_otbColText.TextSize = new System.Drawing.Size(69, 13);
+            // 
+            // otbColDateTime
+            // 
+            this.otbColDateTime.Caption = "วันเวลา";
+            this.otbColDateTime.FieldName = "dDataDateTime";
+            this.otbColDateTime.LayoutViewField = this.layoutViewField_otbColDateTime;
+            this.otbColDateTime.Name = "otbColDateTime";
+            this.otbColDateTime.OptionsColumn.AllowEdit = false;
+            this.otbColDateTime.Width = 133;
+            // 
+            // layoutViewField_otbColDateTime
+            // 
+            this.layoutViewField_otbColDateTime.EditorPreferredWidth = 126;
+            this.layoutViewField_otbColDateTime.Location = new System.Drawing.Point(0, 48);
+            this.layoutViewField_otbColDateTime.Name = "layoutViewField_otbColDateTime";
+            this.layoutViewField_otbColDateTime.Size = new System.Drawing.Size(211, 24);
+            this.layoutViewField_otbColDateTime.TextSize = new System.Drawing.Size(69, 13);
+            // 
+            // otbColNumber
+            // 
+            this.otbColNumber.Caption = "ตัวเลข";
+            this.otbColNumber.FieldName = "nDataNumber";
+            this.otbColNumber.LayoutViewField = this.layoutViewField_otbColNumber;
+            this.otbColNumber.Name = "otbColNumber";
+            this.otbColNumber.OptionsColumn.AllowEdit = false;
+            this.otbColNumber.Width = 107;
+            // 
+            // layoutViewField_otbColNumber
+            // 
+            this.layoutViewField_otbColNumber.EditorPreferredWidth = 126;
+            this.layoutViewField_otbColNumber.Location = new System.Drawing.Point(0, 72);
+            this.layoutViewField_otbColNumber.Name = "layoutViewField_otbColNumber";
+            this.layoutViewField_otbColNumber.Size = new System.Drawing.Size(211, 24);
+            this.layoutViewField_otbColNumber.TextSize = new System.Drawing.Size(69, 13);
+            // 
+            // otbColDecimal
+            // 
+            this.otbColDecimal.Caption = "ตัวเลขทศนิยม";
+            this.otbColDecimal.FieldName = "cDataDecimal";
+            this.otbColDecimal.LayoutViewField = this.layoutViewField_otbColDecimal;
+            this.otbColDecimal.Name = "otbColDecimal";
+            this.otbColDecimal.OptionsColumn.AllowEdit = false;
+            this.otbColDecimal.Width = 126;
+            // 
+            // layoutViewField_otbColDecimal
+            // 
+            this.layoutViewField_otbColDecimal.EditorPreferredWidth = 126;
+            this.layoutViewField_otbColDecimal.Location = new System.Drawing.Point(0, 96);
+            this.layoutViewField_otbColDecimal.Name = "layoutViewField_otbColDecimal";
+            this.layoutViewField_otbColDecimal.Size = new System.Drawing.Size(211, 24);
+            this.layoutViewField_otbColDecimal.TextSize = new System.Drawing.Size(69, 13);
+            // 
+            // otbColPdt
+            // 
+            this.otbColPdt.Caption = "รูป";
+            this.otbColPdt.ColumnEdit = this.repositoryItemPictureEdit1;
+            this.otbColPdt.FieldName = "oilColPdt";
+            this.otbColPdt.LayoutViewField = this.layoutViewField_otbColPdt;
+            this.otbColPdt.Name = "otbColPdt";
+            this.otbColPdt.OptionsColumn.AllowEdit = false;
+            // 
+            // layoutViewField_otbColPdt
+            // 
+            this.layoutViewField_otbColPdt.EditorPreferredWidth = 126;
+            this.layoutViewField_otbColPdt.Location = new System.Drawing.Point(0, 120);
+            this.layoutViewField_otbColPdt.Name = "layoutViewField_otbColPdt";
+            this.layoutViewField_otbColPdt.Size = new System.Drawing.Size(211, 26);
+            this.layoutViewField_otbColPdt.StartNewLine = true;
+            this.layoutViewField_otbColPdt.TextSize = new System.Drawing.Size(69, 13);
+            // 
+            // layoutViewCard1
+            // 
+            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_ockColCheckBox,
+            this.layoutViewField_otbColText,
+            this.layoutViewField_otbColDateTime,
+            this.layoutViewField_otbColNumber,
+            this.layoutViewField_otbColDecimal,
+            this.layoutViewField_otbColPdt});
+            this.layoutViewCard1.Name = "layoutViewCard1";
             // 
             // olaShoTxt
             // 
@@ -186,220 +397,33 @@
             this.opbShowIMG.TabIndex = 9;
             this.opbShowIMG.TabStop = false;
             // 
-            // layoutView1
+            // ocmLayout
             // 
-            this.layoutView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.LayoutViewColumn[] {
-            this.ockColCheckBox,
-            this.otbColText,
-            this.otbColDateTime,
-            this.otbColNumber,
-            this.otbColDecimal,
-            this.otbColPdt});
-            this.layoutView1.GridControl = this.ogdData;
-            this.layoutView1.Name = "layoutView1";
-            this.layoutView1.TemplateCard = this.layoutViewCard1;
+            this.ocmLayout.Location = new System.Drawing.Point(347, 179);
+            this.ocmLayout.Name = "ocmLayout";
+            this.ocmLayout.Size = new System.Drawing.Size(75, 23);
+            this.ocmLayout.TabIndex = 10;
+            this.ocmLayout.Text = "layout";
+            this.ocmLayout.UseVisualStyleBackColor = true;
+            this.ocmLayout.Click += new System.EventHandler(this.ocmLayout_Click);
             // 
-            // ockColCheckBox
+            // ocmBandedGrid
             // 
-            this.ockColCheckBox.Caption = "เลือก";
-            this.ockColCheckBox.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.ockColCheckBox.LayoutViewField = this.layoutViewField_ockColCheckBox;
-            this.ockColCheckBox.Name = "ockColCheckBox";
-            this.ockColCheckBox.OptionsColumn.AllowEdit = false;
-            this.ockColCheckBox.Width = 41;
-            // 
-            // otbColText
-            // 
-            this.otbColText.Caption = "ข้อมูล";
-            this.otbColText.FieldName = "tDataText";
-            this.otbColText.LayoutViewField = this.layoutViewField_otbColText;
-            this.otbColText.Name = "otbColText";
-            this.otbColText.OptionsColumn.AllowEdit = false;
-            this.otbColText.Width = 278;
-            // 
-            // otbColDateTime
-            // 
-            this.otbColDateTime.Caption = "วันเวลา";
-            this.otbColDateTime.FieldName = "dDataDateTime";
-            this.otbColDateTime.LayoutViewField = this.layoutViewField_otbColDateTime;
-            this.otbColDateTime.Name = "otbColDateTime";
-            this.otbColDateTime.OptionsColumn.AllowEdit = false;
-            this.otbColDateTime.Width = 133;
-            // 
-            // otbColNumber
-            // 
-            this.otbColNumber.Caption = "ตัวเลข";
-            this.otbColNumber.FieldName = "nDataNumber";
-            this.otbColNumber.LayoutViewField = this.layoutViewField_otbColNumber;
-            this.otbColNumber.Name = "otbColNumber";
-            this.otbColNumber.OptionsColumn.AllowEdit = false;
-            this.otbColNumber.Width = 107;
-            // 
-            // otbColDecimal
-            // 
-            this.otbColDecimal.Caption = "ตัวเลขทศนิยม";
-            this.otbColDecimal.FieldName = "cDataDecimal";
-            this.otbColDecimal.LayoutViewField = this.layoutViewField_otbColDecimal;
-            this.otbColDecimal.Name = "otbColDecimal";
-            this.otbColDecimal.OptionsColumn.AllowEdit = false;
-            this.otbColDecimal.Width = 126;
-            // 
-            // otbColPdt
-            // 
-            this.otbColPdt.Caption = "รูป";
-            this.otbColPdt.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.otbColPdt.FieldName = "oilColPdt";
-            this.otbColPdt.LayoutViewField = this.layoutViewField_otbColPdt;
-            this.otbColPdt.Name = "otbColPdt";
-            this.otbColPdt.OptionsColumn.AllowEdit = false;
-            // 
-            // layoutViewCard1
-            // 
-            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
-            this.layoutViewCard1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutViewField_ockColCheckBox,
-            this.layoutViewField_otbColText,
-            this.layoutViewField_otbColDateTime,
-            this.layoutViewField_otbColNumber,
-            this.layoutViewField_otbColDecimal,
-            this.layoutViewField_otbColPdt});
-            this.layoutViewCard1.Name = "layoutViewCard1";
-            // 
-            // layoutViewField_ockColCheckBox
-            // 
-            this.layoutViewField_ockColCheckBox.EditorPreferredWidth = 126;
-            this.layoutViewField_ockColCheckBox.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_ockColCheckBox.Name = "layoutViewField_ockColCheckBox";
-            this.layoutViewField_ockColCheckBox.Size = new System.Drawing.Size(211, 24);
-            this.layoutViewField_ockColCheckBox.TextSize = new System.Drawing.Size(69, 13);
-            // 
-            // layoutViewField_otbColText
-            // 
-            this.layoutViewField_otbColText.EditorPreferredWidth = 126;
-            this.layoutViewField_otbColText.Location = new System.Drawing.Point(0, 24);
-            this.layoutViewField_otbColText.Name = "layoutViewField_otbColText";
-            this.layoutViewField_otbColText.Size = new System.Drawing.Size(211, 24);
-            this.layoutViewField_otbColText.TextSize = new System.Drawing.Size(69, 13);
-            // 
-            // layoutViewField_otbColDateTime
-            // 
-            this.layoutViewField_otbColDateTime.EditorPreferredWidth = 126;
-            this.layoutViewField_otbColDateTime.Location = new System.Drawing.Point(0, 48);
-            this.layoutViewField_otbColDateTime.Name = "layoutViewField_otbColDateTime";
-            this.layoutViewField_otbColDateTime.Size = new System.Drawing.Size(211, 24);
-            this.layoutViewField_otbColDateTime.TextSize = new System.Drawing.Size(69, 13);
-            // 
-            // layoutViewField_otbColNumber
-            // 
-            this.layoutViewField_otbColNumber.EditorPreferredWidth = 126;
-            this.layoutViewField_otbColNumber.Location = new System.Drawing.Point(0, 72);
-            this.layoutViewField_otbColNumber.Name = "layoutViewField_otbColNumber";
-            this.layoutViewField_otbColNumber.Size = new System.Drawing.Size(211, 24);
-            this.layoutViewField_otbColNumber.TextSize = new System.Drawing.Size(69, 13);
-            // 
-            // layoutViewField_otbColDecimal
-            // 
-            this.layoutViewField_otbColDecimal.EditorPreferredWidth = 126;
-            this.layoutViewField_otbColDecimal.Location = new System.Drawing.Point(0, 96);
-            this.layoutViewField_otbColDecimal.Name = "layoutViewField_otbColDecimal";
-            this.layoutViewField_otbColDecimal.Size = new System.Drawing.Size(211, 24);
-            this.layoutViewField_otbColDecimal.TextSize = new System.Drawing.Size(69, 13);
-            // 
-            // layoutViewField_otbColPdt
-            // 
-            this.layoutViewField_otbColPdt.EditorPreferredWidth = 126;
-            this.layoutViewField_otbColPdt.Location = new System.Drawing.Point(0, 120);
-            this.layoutViewField_otbColPdt.Name = "layoutViewField_otbColPdt";
-            this.layoutViewField_otbColPdt.Size = new System.Drawing.Size(211, 26);
-            this.layoutViewField_otbColPdt.StartNewLine = true;
-            this.layoutViewField_otbColPdt.TextSize = new System.Drawing.Size(69, 13);
-            // 
-            // bandedGridView1
-            // 
-            this.bandedGridView1.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
-            this.gridBand1});
-            this.bandedGridView1.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
-            this.bandedGridColumn1,
-            this.bandedGridColumn2,
-            this.bandedGridColumn3,
-            this.bandedGridColumn4,
-            this.bandedGridColumn5,
-            this.bandedGridColumn6});
-            this.bandedGridView1.GridControl = this.ogdData;
-            this.bandedGridView1.Name = "bandedGridView1";
-            // 
-            // gridBand1
-            // 
-            this.gridBand1.Caption = "gridBand1";
-            this.gridBand1.Columns.Add(this.bandedGridColumn1);
-            this.gridBand1.Columns.Add(this.bandedGridColumn2);
-            this.gridBand1.Columns.Add(this.bandedGridColumn3);
-            this.gridBand1.Columns.Add(this.bandedGridColumn4);
-            this.gridBand1.Columns.Add(this.bandedGridColumn5);
-            this.gridBand1.Columns.Add(this.bandedGridColumn6);
-            this.gridBand1.Name = "gridBand1";
-            this.gridBand1.VisibleIndex = 0;
-            this.gridBand1.Width = 760;
-            // 
-            // bandedGridColumn1
-            // 
-            this.bandedGridColumn1.Caption = "เลือก";
-            this.bandedGridColumn1.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.bandedGridColumn1.Name = "bandedGridColumn1";
-            this.bandedGridColumn1.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn1.Visible = true;
-            this.bandedGridColumn1.Width = 41;
-            // 
-            // bandedGridColumn2
-            // 
-            this.bandedGridColumn2.Caption = "ข้อมูล";
-            this.bandedGridColumn2.FieldName = "tDataText";
-            this.bandedGridColumn2.Name = "bandedGridColumn2";
-            this.bandedGridColumn2.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn2.Visible = true;
-            this.bandedGridColumn2.Width = 278;
-            // 
-            // bandedGridColumn3
-            // 
-            this.bandedGridColumn3.Caption = "วันเวลา";
-            this.bandedGridColumn3.FieldName = "dDataDateTime";
-            this.bandedGridColumn3.Name = "bandedGridColumn3";
-            this.bandedGridColumn3.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn3.Visible = true;
-            this.bandedGridColumn3.Width = 133;
-            // 
-            // bandedGridColumn4
-            // 
-            this.bandedGridColumn4.Caption = "ตัวเลข";
-            this.bandedGridColumn4.FieldName = "nDataNumber";
-            this.bandedGridColumn4.Name = "bandedGridColumn4";
-            this.bandedGridColumn4.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn4.Visible = true;
-            this.bandedGridColumn4.Width = 107;
-            // 
-            // bandedGridColumn5
-            // 
-            this.bandedGridColumn5.Caption = "ตัวเลขทศนิยม";
-            this.bandedGridColumn5.FieldName = "cDataDecimal";
-            this.bandedGridColumn5.Name = "bandedGridColumn5";
-            this.bandedGridColumn5.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn5.Visible = true;
-            this.bandedGridColumn5.Width = 126;
-            // 
-            // bandedGridColumn6
-            // 
-            this.bandedGridColumn6.Caption = "รูป";
-            this.bandedGridColumn6.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.bandedGridColumn6.FieldName = "oilColPdt";
-            this.bandedGridColumn6.Name = "bandedGridColumn6";
-            this.bandedGridColumn6.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn6.Visible = true;
+            this.ocmBandedGrid.Location = new System.Drawing.Point(473, 179);
+            this.ocmBandedGrid.Name = "ocmBandedGrid";
+            this.ocmBandedGrid.Size = new System.Drawing.Size(75, 23);
+            this.ocmBandedGrid.TabIndex = 11;
+            this.ocmBandedGrid.Text = "bandedGridV";
+            this.ocmBandedGrid.UseVisualStyleBackColor = true;
+            this.ocmBandedGrid.Click += new System.EventHandler(this.ocmBandedGrid_Click);
             // 
             // wCard1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 570);
+            this.Controls.Add(this.ocmBandedGrid);
+            this.Controls.Add(this.ocmLayout);
             this.Controls.Add(this.opbShowIMG);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -413,18 +437,18 @@
             this.Name = "wCard1";
             this.Text = "CardForm";
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_ockColCheckBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColText)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColDateTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColDecimal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_otbColPdt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,6 +490,8 @@
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn bandedGridColumn4;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn bandedGridColumn5;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn bandedGridColumn6;
+        private System.Windows.Forms.Button ocmLayout;
+        private System.Windows.Forms.Button ocmBandedGrid;
     }
 }
 
