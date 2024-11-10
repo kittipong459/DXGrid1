@@ -78,7 +78,17 @@ namespace DXGrid1
 
             }
             catch (Exception oEx) {
-                MessageBox.Show(oEx.Message);
+
+                DataRow oDatRes = bandedGridView1.GetFocusedDataRow() as DataRow;
+                olaShoTxt.Text = oDatRes["tDataText"].ToString();
+                otbPrice.Text = oDatRes["cDataDecimal"].ToString();
+                olaDate.Text = oDatRes["dDataDateTime"].ToString();
+                olaQty.Text = oDatRes["nDataNumber"].ToString();
+
+                Image oImg = (Image)oDatRes["oilColPdt"];
+                opbShowIMG.Image = oImg;
+                
+                //MessageBox.Show(oEx.Message);
             }
             finally
             {
