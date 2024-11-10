@@ -75,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -86,6 +87,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\f1.png" />
+    <Content Include="Resources\f1m.png" />
+    <Content Include="Resources\f2.png" />
+    <Content Include="Resources\f2m.png" />
+    <Content Include="Resources\f3.png" />
+    <Content Include="Resources\f3m.png" />
+    <Content Include="Resources\f4.png" />
+    <Content Include="Resources\f4m.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

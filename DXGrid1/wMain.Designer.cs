@@ -36,24 +36,33 @@
             this.otbColDateTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.otbColNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.otbColDecimal = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.oilPdt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.otbColPdt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.olaShoTxt = new System.Windows.Forms.Label();
+            this.olaDate = new System.Windows.Forms.Label();
+            this.olaQty = new System.Windows.Forms.Label();
+            this.otbPrice = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.opbShowIMG = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogdDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // ogdData
             // 
-            this.ogdData.Location = new System.Drawing.Point(70, 100);
+            this.ogdData.Location = new System.Drawing.Point(50, 186);
             this.ogdData.MainView = this.ogdDataList;
             this.ogdData.Name = "ogdData";
             this.ogdData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
             this.repositoryItemPictureEdit1});
-            this.ogdData.Size = new System.Drawing.Size(814, 444);
+            this.ogdData.Size = new System.Drawing.Size(834, 358);
             this.ogdData.TabIndex = 0;
             this.ogdData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ogdDataList});
@@ -70,7 +79,7 @@
             this.otbColDateTime,
             this.otbColNumber,
             this.otbColDecimal,
-            this.oilPdt});
+            this.otbColPdt});
             this.ogdDataList.GridControl = this.ogdData;
             this.ogdDataList.Name = "ogdDataList";
             this.ogdDataList.RowHeight = 45;
@@ -130,14 +139,15 @@
             this.otbColDecimal.VisibleIndex = 4;
             this.otbColDecimal.Width = 126;
             // 
-            // oilPdt
+            // otbColPdt
             // 
-            this.oilPdt.Caption = "รูป";
-            this.oilPdt.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.oilPdt.Name = "oilPdt";
-            this.oilPdt.OptionsColumn.AllowEdit = false;
-            this.oilPdt.Visible = true;
-            this.oilPdt.VisibleIndex = 5;
+            this.otbColPdt.Caption = "รูป";
+            this.otbColPdt.ColumnEdit = this.repositoryItemPictureEdit1;
+            this.otbColPdt.FieldName = "oilColPdt";
+            this.otbColPdt.Name = "otbColPdt";
+            this.otbColPdt.OptionsColumn.AllowEdit = false;
+            this.otbColPdt.Visible = true;
+            this.otbColPdt.VisibleIndex = 5;
             // 
             // repositoryItemPictureEdit1
             // 
@@ -147,17 +157,100 @@
             // 
             this.olaShoTxt.AutoSize = true;
             this.olaShoTxt.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.olaShoTxt.Location = new System.Drawing.Point(70, 28);
+            this.olaShoTxt.Location = new System.Drawing.Point(179, 9);
             this.olaShoTxt.Name = "olaShoTxt";
-            this.olaShoTxt.Size = new System.Drawing.Size(67, 25);
+            this.olaShoTxt.Size = new System.Drawing.Size(38, 25);
             this.olaShoTxt.TabIndex = 1;
-            this.olaShoTxt.Text = "label1";
+            this.olaShoTxt.Text = "ชื่อ";
+            // 
+            // olaDate
+            // 
+            this.olaDate.AutoSize = true;
+            this.olaDate.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.olaDate.Location = new System.Drawing.Point(179, 47);
+            this.olaDate.Name = "olaDate";
+            this.olaDate.Size = new System.Drawing.Size(50, 25);
+            this.olaDate.TabIndex = 2;
+            this.olaDate.Text = "วันที่";
+            // 
+            // olaQty
+            // 
+            this.olaQty.AutoSize = true;
+            this.olaQty.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.olaQty.Location = new System.Drawing.Point(179, 88);
+            this.olaQty.Name = "olaQty";
+            this.olaQty.Size = new System.Drawing.Size(70, 25);
+            this.olaQty.TabIndex = 3;
+            this.olaQty.Text = "จำนวน";
+            // 
+            // otbPrice
+            // 
+            this.otbPrice.Location = new System.Drawing.Point(184, 141);
+            this.otbPrice.Name = "otbPrice";
+            this.otbPrice.Size = new System.Drawing.Size(392, 21);
+            this.otbPrice.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(70, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "ราคา";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "จำนวน";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(70, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "วันที่";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(70, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 25);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "ชื่อสินค้า";
+            // 
+            // opbShowIMG
+            // 
+            this.opbShowIMG.Location = new System.Drawing.Point(601, 9);
+            this.opbShowIMG.Name = "opbShowIMG";
+            this.opbShowIMG.Size = new System.Drawing.Size(244, 153);
+            this.opbShowIMG.TabIndex = 9;
+            this.opbShowIMG.TabStop = false;
             // 
             // wMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 570);
+            this.Controls.Add(this.opbShowIMG);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.otbPrice);
+            this.Controls.Add(this.olaQty);
+            this.Controls.Add(this.olaDate);
             this.Controls.Add(this.olaShoTxt);
             this.Controls.Add(this.ogdData);
             this.Name = "wMain";
@@ -166,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ogdDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,8 +276,16 @@
         private DevExpress.XtraGrid.Columns.GridColumn otbColNumber;
         private DevExpress.XtraGrid.Columns.GridColumn otbColDecimal;
         private System.Windows.Forms.Label olaShoTxt;
-        private DevExpress.XtraGrid.Columns.GridColumn oilPdt;
+        private DevExpress.XtraGrid.Columns.GridColumn otbColPdt;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
+        private System.Windows.Forms.Label olaDate;
+        private System.Windows.Forms.Label olaQty;
+        private System.Windows.Forms.TextBox otbPrice;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox opbShowIMG;
     }
 }
 

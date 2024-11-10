@@ -39,12 +39,13 @@ namespace DXGrid1
                 odtData.Columns.Add("dDataDateTime", typeof(DateTime));
                 odtData.Columns.Add("nDataNumber", typeof(int));
                 odtData.Columns.Add("cDataDecimal", typeof(decimal));
+                odtData.Columns.Add("oilColPdt", typeof(Image));
 
-                odtData.Rows.Add("ข้อความตัวอย่างที่ 1", DateTime.Now, 2000, 1500.50);
-                odtData.Rows.Add("ข้อความตัวอย่างที่ 2", DateTime.Now, 150450, 1000.26);
-                odtData.Rows.Add("ข้อความตัวอย่างที่ 3", DateTime.Now, 1850, 1850);
-                odtData.Rows.Add("ข้อความตัวอย่างที่ 4", DateTime.Now, 999000, 880.7858);
-                odtData.Rows.Add("ข้อความตัวอย่างที่ 5", DateTime.Now, 10, 15.669);
+
+                odtData.Rows.Add("ต้มยำกุ้ง", DateTime.Now, 2000, 1500.50,Properties.Resources.f1m);
+                odtData.Rows.Add("ส้มตำ", DateTime.Now, 150450, 1000.26, Properties.Resources.f2m);
+                odtData.Rows.Add("ก๋วยเตี๋ยว", DateTime.Now, 1850, 1850, Properties.Resources.f3m);
+                odtData.Rows.Add("ลาบหมู", DateTime.Now, 999000, 880.7858, Properties.Resources.f4m);
 
             }
             catch (Exception)
@@ -66,6 +67,13 @@ namespace DXGrid1
                // int nRow = ogdDataList.RowCellClick;
                 DataRow oDatRes = ogdDataList.GetFocusedDataRow() as DataRow;
                 olaShoTxt.Text = oDatRes["tDataText"].ToString();
+                otbPrice.Text = oDatRes["cDataDecimal"].ToString();
+                olaDate.Text = oDatRes["dDataDateTime"].ToString();
+                olaQty.Text = oDatRes["nDataNumber"].ToString();
+
+                Image oImg = (Image)oDatRes["oilColPdt"];
+                opbShowIMG.Image = oImg;
+
                 //olaShoTxt.Text = "5555";
 
             }
@@ -78,5 +86,6 @@ namespace DXGrid1
             }
            
         }
+
     }
 }
