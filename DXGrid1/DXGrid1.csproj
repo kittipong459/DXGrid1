@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="wCard1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wCard1.Designer.cs">
+      <DependentUpon>wCard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wCard.Designer.cs">
+      <DependentUpon>wCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="wMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="wCard1.resx">
+      <DependentUpon>wCard1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wCard.resx">
+      <DependentUpon>wCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="wMain.resx">
       <DependentUpon>wMain.cs</DependentUpon>
     </EmbeddedResource>

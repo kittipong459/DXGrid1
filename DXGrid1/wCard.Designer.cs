@@ -1,6 +1,6 @@
 ﻿namespace DXGrid1
 {
-    partial class wMain
+    partial class wCard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,7 @@
         private void InitializeComponent()
         {
             this.ogdData = new DevExpress.XtraGrid.GridControl();
-            this.ogdDataList = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ockColCheckBox = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.otbColText = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.otbColDateTime = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.otbColNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.otbColDecimal = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.otbColPdt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.olaShoTxt = new System.Windows.Forms.Label();
             this.olaDate = new System.Windows.Forms.Label();
@@ -47,17 +40,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.opbShowIMG = new System.Windows.Forms.PictureBox();
+            this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
+            this.ockColCheckBox = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.otbColText = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.otbColDateTime = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.otbColNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.otbColDecimal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.otbColPdt = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogdDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ogdData
             // 
             this.ogdData.Location = new System.Drawing.Point(50, 186);
-            this.ogdData.MainView = this.ogdDataList;
+            this.ogdData.MainView = this.cardView1;
             this.ogdData.Name = "ogdData";
             this.ogdData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
@@ -65,89 +65,13 @@
             this.ogdData.Size = new System.Drawing.Size(834, 358);
             this.ogdData.TabIndex = 0;
             this.ogdData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.ogdDataList});
+            this.cardView1});
             this.ogdData.Click += new System.EventHandler(this.ogdData_Click);
-            // 
-            // ogdDataList
-            // 
-            this.ogdDataList.AppearancePrint.EvenRow.Font = new System.Drawing.Font("Tahoma", 15.75F);
-            this.ogdDataList.AppearancePrint.EvenRow.Options.UseFont = true;
-            this.ogdDataList.ColumnPanelRowHeight = 50;
-            this.ogdDataList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ockColCheckBox,
-            this.otbColText,
-            this.otbColDateTime,
-            this.otbColNumber,
-            this.otbColDecimal,
-            this.otbColPdt});
-            this.ogdDataList.GridControl = this.ogdData;
-            this.ogdDataList.Name = "ogdDataList";
-            this.ogdDataList.RowHeight = 45;
-            // 
-            // ockColCheckBox
-            // 
-            this.ockColCheckBox.Caption = "เลือก";
-            this.ockColCheckBox.ColumnEdit = this.repositoryItemCheckEdit1;
-            this.ockColCheckBox.Name = "ockColCheckBox";
-            this.ockColCheckBox.OptionsColumn.AllowEdit = false;
-            this.ockColCheckBox.Visible = true;
-            this.ockColCheckBox.VisibleIndex = 0;
-            this.ockColCheckBox.Width = 41;
             // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
-            // 
-            // otbColText
-            // 
-            this.otbColText.Caption = "ข้อมูล";
-            this.otbColText.FieldName = "tDataText";
-            this.otbColText.Name = "otbColText";
-            this.otbColText.OptionsColumn.AllowEdit = false;
-            this.otbColText.Visible = true;
-            this.otbColText.VisibleIndex = 1;
-            this.otbColText.Width = 278;
-            // 
-            // otbColDateTime
-            // 
-            this.otbColDateTime.Caption = "วันเวลา";
-            this.otbColDateTime.FieldName = "dDataDateTime";
-            this.otbColDateTime.Name = "otbColDateTime";
-            this.otbColDateTime.OptionsColumn.AllowEdit = false;
-            this.otbColDateTime.Visible = true;
-            this.otbColDateTime.VisibleIndex = 2;
-            this.otbColDateTime.Width = 133;
-            // 
-            // otbColNumber
-            // 
-            this.otbColNumber.Caption = "ตัวเลข";
-            this.otbColNumber.FieldName = "nDataNumber";
-            this.otbColNumber.Name = "otbColNumber";
-            this.otbColNumber.OptionsColumn.AllowEdit = false;
-            this.otbColNumber.Visible = true;
-            this.otbColNumber.VisibleIndex = 3;
-            this.otbColNumber.Width = 107;
-            // 
-            // otbColDecimal
-            // 
-            this.otbColDecimal.Caption = "ตัวเลขทศนิยม";
-            this.otbColDecimal.FieldName = "cDataDecimal";
-            this.otbColDecimal.Name = "otbColDecimal";
-            this.otbColDecimal.OptionsColumn.AllowEdit = false;
-            this.otbColDecimal.Visible = true;
-            this.otbColDecimal.VisibleIndex = 4;
-            this.otbColDecimal.Width = 126;
-            // 
-            // otbColPdt
-            // 
-            this.otbColPdt.Caption = "รูป";
-            this.otbColPdt.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.otbColPdt.FieldName = "oilColPdt";
-            this.otbColPdt.Name = "otbColPdt";
-            this.otbColPdt.OptionsColumn.AllowEdit = false;
-            this.otbColPdt.Visible = true;
-            this.otbColPdt.VisibleIndex = 5;
             // 
             // repositoryItemPictureEdit1
             // 
@@ -238,7 +162,80 @@
             this.opbShowIMG.TabIndex = 9;
             this.opbShowIMG.TabStop = false;
             // 
-            // wMain
+            // cardView1
+            // 
+            this.cardView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ockColCheckBox,
+            this.otbColText,
+            this.otbColDateTime,
+            this.otbColNumber,
+            this.otbColDecimal,
+            this.otbColPdt});
+            this.cardView1.GridControl = this.ogdData;
+            this.cardView1.Name = "cardView1";
+            this.cardView1.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Auto;
+            // 
+            // ockColCheckBox
+            // 
+            this.ockColCheckBox.Caption = "เลือก";
+            this.ockColCheckBox.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.ockColCheckBox.Name = "ockColCheckBox";
+            this.ockColCheckBox.OptionsColumn.AllowEdit = false;
+            this.ockColCheckBox.Visible = true;
+            this.ockColCheckBox.VisibleIndex = 0;
+            this.ockColCheckBox.Width = 41;
+            // 
+            // otbColText
+            // 
+            this.otbColText.Caption = "ข้อมูล";
+            this.otbColText.FieldName = "tDataText";
+            this.otbColText.Name = "otbColText";
+            this.otbColText.OptionsColumn.AllowEdit = false;
+            this.otbColText.Visible = true;
+            this.otbColText.VisibleIndex = 1;
+            this.otbColText.Width = 278;
+            // 
+            // otbColDateTime
+            // 
+            this.otbColDateTime.Caption = "วันเวลา";
+            this.otbColDateTime.FieldName = "dDataDateTime";
+            this.otbColDateTime.Name = "otbColDateTime";
+            this.otbColDateTime.OptionsColumn.AllowEdit = false;
+            this.otbColDateTime.Visible = true;
+            this.otbColDateTime.VisibleIndex = 2;
+            this.otbColDateTime.Width = 133;
+            // 
+            // otbColNumber
+            // 
+            this.otbColNumber.Caption = "ตัวเลข";
+            this.otbColNumber.FieldName = "nDataNumber";
+            this.otbColNumber.Name = "otbColNumber";
+            this.otbColNumber.OptionsColumn.AllowEdit = false;
+            this.otbColNumber.Visible = true;
+            this.otbColNumber.VisibleIndex = 3;
+            this.otbColNumber.Width = 107;
+            // 
+            // otbColDecimal
+            // 
+            this.otbColDecimal.Caption = "ตัวเลขทศนิยม";
+            this.otbColDecimal.FieldName = "cDataDecimal";
+            this.otbColDecimal.Name = "otbColDecimal";
+            this.otbColDecimal.OptionsColumn.AllowEdit = false;
+            this.otbColDecimal.Visible = true;
+            this.otbColDecimal.VisibleIndex = 4;
+            this.otbColDecimal.Width = 126;
+            // 
+            // otbColPdt
+            // 
+            this.otbColPdt.Caption = "รูป";
+            this.otbColPdt.ColumnEdit = this.repositoryItemPictureEdit1;
+            this.otbColPdt.FieldName = "oilColPdt";
+            this.otbColPdt.Name = "otbColPdt";
+            this.otbColPdt.OptionsColumn.AllowEdit = false;
+            this.otbColPdt.Visible = true;
+            this.otbColPdt.VisibleIndex = 5;
+            // 
+            // wCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,13 +250,13 @@
             this.Controls.Add(this.olaDate);
             this.Controls.Add(this.olaShoTxt);
             this.Controls.Add(this.ogdData);
-            this.Name = "wMain";
-            this.Text = "MainForm";
+            this.Name = "wCard";
+            this.Text = "CardForm";
             ((System.ComponentModel.ISupportInitialize)(this.ogdData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogdDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbShowIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,15 +265,8 @@
         #endregion
 
         private DevExpress.XtraGrid.GridControl ogdData;
-        private DevExpress.XtraGrid.Views.Grid.GridView ogdDataList;
-        private DevExpress.XtraGrid.Columns.GridColumn ockColCheckBox;
-        private DevExpress.XtraGrid.Columns.GridColumn otbColText;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
-        private DevExpress.XtraGrid.Columns.GridColumn otbColDateTime;
-        private DevExpress.XtraGrid.Columns.GridColumn otbColNumber;
-        private DevExpress.XtraGrid.Columns.GridColumn otbColDecimal;
         private System.Windows.Forms.Label olaShoTxt;
-        private DevExpress.XtraGrid.Columns.GridColumn otbColPdt;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
         private System.Windows.Forms.Label olaDate;
         private System.Windows.Forms.Label olaQty;
@@ -286,6 +276,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox opbShowIMG;
+        private DevExpress.XtraGrid.Views.Card.CardView cardView1;
+        private DevExpress.XtraGrid.Columns.GridColumn ockColCheckBox;
+        private DevExpress.XtraGrid.Columns.GridColumn otbColText;
+        private DevExpress.XtraGrid.Columns.GridColumn otbColDateTime;
+        private DevExpress.XtraGrid.Columns.GridColumn otbColNumber;
+        private DevExpress.XtraGrid.Columns.GridColumn otbColDecimal;
+        private DevExpress.XtraGrid.Columns.GridColumn otbColPdt;
     }
 }
 

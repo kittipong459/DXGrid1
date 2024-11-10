@@ -18,7 +18,9 @@ namespace DXGrid1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new wMain());
+            Application.Run(new wCard1());
+            //Application.Run(new wCard());
+            //Application.Run(new wMain());
         }
     }
 }
